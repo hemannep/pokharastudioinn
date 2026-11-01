@@ -15,6 +15,20 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://pokharastudioinn.com.np/"
 
+FORBIDDEN_IMAGE_KEYWORDS = (
+    "platform",
+    "platformassets",
+    "airbnbplatformassets",
+    "/user/",
+    "favicon",
+    "icon",
+    "logo",
+    "badge",
+    "search-bar-icons",
+    "review-ai-synthesis",
+    "userprofile",
+)
+
 
 def load_constant(source: str, name: str):
     marker = f"const {name} = "
@@ -27,11 +41,21 @@ def fail(message: str) -> None:
     raise AssertionError(message)
 
 
-def validate_image(path_or_url: str) -> None:
+def validate_image(path_or_url: str, listing_id: str | None = None) -> None:
     if path_or_url.startswith(("https://", "http://")):
         parsed = urlparse(path_or_url)
         if parsed.scheme != "https" or parsed.hostname != "a0.muscache.com":
             fail(f"untrusted remote image URL: {path_or_url}")
+        
+        low = path_or_url.lower()
+        for kw in FORBIDDEN_IMAGE_KEYWORDS:
+            if kw in low:
+                fail(f"forbidden platform/avatar asset detected in images: {path_or_url}")
+        
+        if listing_id:
+            hosting_match = re.search(r"/hosting-(\d+)/", low)
+            if hosting_match and hosting_match.group(1) != str(listing_id):
+                fail(f"{listing_id} contains remote image belonging to another listing: {path_or_url}")
         return
 
     path = ROOT / path_or_url
@@ -70,13 +94,13 @@ def main() -> int:
         if not apartment["url"].startswith("https://www.airbnb.com/rooms/"):
             fail(f"invalid listing URL for {apartment['id']}")
         for image in apartment["images"]:
-            validate_image(image)
+            validate_image(image, str(apartment["id"]))
 
     known_ids = set(ids)
     for slide in slides:
         if str(slide.get("apt_id")) not in known_ids:
             fail(f"hero references unknown apartment: {slide.get('apt_id')}")
-        validate_image(slide["image"])
+        validate_image(slide["image"], str(slide.get("apt_id")))
 
     if not reviews:
         fail("reviews data is empty")

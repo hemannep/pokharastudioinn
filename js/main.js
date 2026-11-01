@@ -3,6 +3,23 @@
  * Enhanced with Hero Carousel, Card Photo Sliders & Lightbox Modal
  */
 
+// Filter out any stray platform assets, review icons, or user avatars defensively
+if (typeof APARTMENTS_DATA !== 'undefined' && Array.isArray(APARTMENTS_DATA)) {
+  const FORBIDDEN_PATTERNS = [
+    'platform', 'platformassets', 'airbnbplatformassets', '/user/',
+    'favicon', 'icon', 'search-bar-icons', 'review-ai-synthesis', 'userprofile'
+  ];
+  APARTMENTS_DATA.forEach(apt => {
+    if (Array.isArray(apt.images)) {
+      apt.images = apt.images.filter(url => {
+        if (!url || typeof url !== 'string') return false;
+        const lower = url.toLowerCase();
+        return !FORBIDDEN_PATTERNS.some(pat => lower.includes(pat));
+      });
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   renderApartments(APARTMENTS_DATA);

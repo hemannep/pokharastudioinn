@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import os
 import re
@@ -22,10 +23,36 @@ SITEMAP_FILE = ROOT / "sitemap.xml"
 MIN_VALID_PHOTOS = 5
 MAX_VALID_PHOTOS = 80
 MAX_RESPONSE_BYTES = 12 * 1024 * 1024
+
+FORBIDDEN_IMAGE_KEYWORDS = (
+    "platform",
+    "platformassets",
+    "airbnbplatformassets",
+    "/user/",
+    "favicon",
+    "icon",
+    "logo",
+    "badge",
+    "search-bar-icons",
+    "review-ai-synthesis",
+    "userprofile",
+)
+
 PHOTO_PATTERN = re.compile(
     r"https://a0\.muscache\.com/im/pictures/[^\"'<>\s?]+",
     re.IGNORECASE,
 )
+
+
+def is_clean_listing_photo(url: str, listing_id: str) -> bool:
+    """Check that the URL is a genuine apartment photo and not a platform icon or user avatar."""
+    low = url.lower()
+    if any(keyword in low for keyword in FORBIDDEN_IMAGE_KEYWORDS):
+        return False
+    hosting_match = re.search(r"/hosting-(\d+)/", low)
+    if hosting_match and hosting_match.group(1) != str(listing_id):
+        return False
+    return True
 
 
 def fetch_listing(url: str, attempts: int = 3) -> str:
@@ -65,34 +92,71 @@ def fetch_listing(url: str, attempts: int = 3) -> str:
 
 
 def extract_photos(page: str, listing_id: str) -> list[str]:
-    """Extract only the gallery group anchored to the requested listing ID."""
+    """Extract authentic listing photos from Airbnb, strictly excluding platform assets and user avatars."""
     decoded = html.unescape(page).replace("\\u002F", "/").replace("\\/", "/")
-    candidates: list[str] = []
+    photos: list[str] = []
     seen: set[str] = set()
 
-    for match in PHOTO_PATTERN.finditer(decoded):
-        base_url = match.group(0).rstrip("\\")
-        if base_url not in seen:
-            seen.add(base_url)
-            candidates.append(base_url)
+    def add_photo(raw_url: str) -> None:
+        base = raw_url.split("?")[0].rstrip("\\")
+        if base not in seen and is_clean_listing_photo(base, listing_id):
+            seen.add(base)
+            photos.append(f"{base}?im_w=1200")
 
+    # 1. Parse official PhotoTourModalSection / mediaItems from script data
+    script_matches = re.findall(r"<script\b[^>]*>(.*?)</script>", decoded, re.DOTALL)
+    for s in script_matches:
+        if "PhotoTourModalSection" in s or "mediaItems" in s:
+            trimmed = s.strip()
+            try:
+                if trimmed.startswith("{") and trimmed.endswith("}"):
+                    obj = json.loads(trimmed)
+                else:
+                    m = re.search(r"(\{.*\})", trimmed, re.DOTALL)
+                    obj = json.loads(m.group(1)) if m else None
+
+                if obj:
+                    def walk(node: object) -> None:
+                        if isinstance(node, dict):
+                            if node.get("__typename") == "PhotoTourModalSection" or "mediaItems" in node:
+                                items = node.get("mediaItems")
+                                if isinstance(items, list):
+                                    for item in items:
+                                        if isinstance(item, dict) and "baseUrl" in item:
+                                            add_photo(str(item["baseUrl"]))
+                            for v in node.values():
+                                walk(v)
+                        elif isinstance(node, list):
+                            for v in node:
+                                walk(v)
+
+                    walk(obj)
+            except Exception:
+                pass
+        if len(photos) >= MIN_VALID_PHOTOS:
+            break
+
+    # 2. Check JSON-LD metadata for listing photos
+    for s in script_matches:
+        if "schema.org" in s and "image" in s:
+            try:
+                obj = json.loads(s.strip())
+                imgs = obj.get("image", [])
+                if isinstance(imgs, list):
+                    for img in imgs:
+                        if isinstance(img, str) and "muscache" in img:
+                            add_photo(img)
+            except Exception:
+                pass
+
+    # 3. Add any direct listing-specific hosting photos
     listing_token = f"/Hosting-{listing_id}/".lower()
-    try:
-        start = next(i for i, url in enumerate(candidates) if listing_token in url.lower())
-    except StopIteration:
-        return []
+    for match in PHOTO_PATTERN.finditer(decoded):
+        candidate = match.group(0).rstrip("\\")
+        if listing_token in candidate.lower():
+            add_photo(candidate)
 
-    photos: list[str] = []
-    for url in candidates[start:]:
-        lowered = url.lower()
-        hosting_match = re.search(r"/hosting-(\d+)/", lowered)
-        if hosting_match and hosting_match.group(1) != listing_id:
-            break
-        photos.append(f"{url}?im_w=1200")
-        if len(photos) >= MAX_VALID_PHOTOS:
-            break
-
-    return photos
+    return photos[:MAX_VALID_PHOTOS]
 
 
 def load_constant(source: str, name: str):
@@ -133,7 +197,7 @@ def main() -> int:
             continue
 
         current_count = len(apartment.get("images", []))
-        minimum_expected = max(MIN_VALID_PHOTOS, min(10, current_count // 3))
+        minimum_expected = MIN_VALID_PHOTOS
         if not minimum_expected <= len(photos) <= MAX_VALID_PHOTOS:
             failures += 1
             print(
@@ -165,6 +229,10 @@ def main() -> int:
         updated = replace_constant(updated, "APARTMENTS_DATA", apartments)
         write_atomic(DATA_FILE, updated)
 
+        # A content-derived version makes browsers/CDNs request the refreshed
+        # gallery immediately while keeping long-lived caching safe.
+        data_version = hashlib.sha256(updated.encode("utf-8")).hexdigest()[:12]
+
         first_hero_image = hero_slides[0]["image"]
         index_source = INDEX_FILE.read_text(encoding="utf-8")
         index_updated, replacements = re.subn(
@@ -175,6 +243,14 @@ def main() -> int:
         )
         if replacements != 1:
             raise RuntimeError("hero preload marker was not found in index.html")
+        index_updated, replacements = re.subn(
+            r'<script src="js/data\.js(?:\?v=[^"]+)?"></script>',
+            f'<script src="js/data.js?v={data_version}"></script>',
+            index_updated,
+            count=1,
+        )
+        if replacements != 1:
+            raise RuntimeError("data script marker was not found in index.html")
         write_atomic(INDEX_FILE, index_updated)
 
         sitemap_source = SITEMAP_FILE.read_text(encoding="utf-8")

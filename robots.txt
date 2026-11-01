@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pokharastudioinn.com.np/sitemap.xml

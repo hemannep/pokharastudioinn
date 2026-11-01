@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80">
+  <g fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(4,6)">
+    <path d="M14 58V28a18 18 0 0 1 36 0v30"/><path d="M19 50l9.5-16 4 6.5 4.5-9 8 18.5"/><path d="M19 54.5h26"/>
+  </g>
+  <circle cx="36" cy="26" r="2" fill="#a8834a"/>
+  <line x1="74" y1="16" x2="74" y2="64" stroke="#e7e2da"/>
+  <text x="92" y="44" font-family="Cormorant Garamond, Georgia, serif" font-size="30" font-weight="600" fill="#141414">Pokhara Studio Inn</text>
+  <text x="93" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9.5" letter-spacing="3.2" fill="#a8834a">APARTMENTS · CAFÉ · NEPAL</text>
+</svg>

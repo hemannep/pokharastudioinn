@@ -646,6 +646,7 @@ function setupMobileNav() {
       navMenu.classList.toggle('open', isOpen);
       navMenu.inert = !isOpen && window.innerWidth <= 960;
       header?.classList.toggle('menu-open', isOpen);
+      document.body.classList.toggle('mobile-menu-open', isOpen);
       toggleBtn.setAttribute('aria-expanded', String(isOpen));
       toggleBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
       if (isOpen) navMenu.querySelector('.nav-link')?.focus();

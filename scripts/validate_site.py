@@ -111,8 +111,14 @@ def main() -> int:
         fail(f"duplicate HTML IDs: {duplicate_document_ids}")
     if len(re.findall(r"<h1\b", html_source, flags=re.IGNORECASE)) != 1:
         fail("index.html must contain exactly one h1")
+    if '<html lang="en-NP">' not in html_source:
+        fail("document language must be en-NP")
     if f'<link rel="canonical" href="{SITE_URL}">' not in html_source:
         fail("canonical URL is missing or does not use the production domain")
+    if 'max-image-preview:large' not in html_source:
+        fail("search crawler image-preview directive is missing")
+    if '<meta property="og:image:secure_url"' not in html_source:
+        fail("secure Open Graph image URL is missing")
     if f"Sitemap: {SITE_URL}sitemap.xml" not in robots_source:
         fail("robots.txt sitemap URL does not match the production domain")
 
@@ -126,8 +132,15 @@ def main() -> int:
         html_source,
         flags=re.DOTALL,
     )
-    for block in structured_blocks:
-        json.loads(block)
+    structured_data = [json.loads(block) for block in structured_blocks]
+    structured_types = {item.get("@type") for item in structured_data if isinstance(item, dict)}
+    required_structured_types = {"LodgingBusiness", "WebSite", "ItemList", "FAQPage"}
+    if missing_types := required_structured_types - structured_types:
+        fail(f"missing structured-data types: {sorted(missing_types)}")
+
+    cname = (ROOT / "CNAME").read_text(encoding="utf-8").strip()
+    if cname != "pokharastudioinn.com.np":
+        fail(f"unexpected GitHub Pages custom domain: {cname}")
 
     print(
         f"Validated {len(apartments)} apartments, "

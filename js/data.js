@@ -10,7 +10,7 @@ const HERO_SLIDES = [
     "airbnb_url": "https://www.airbnb.com/rooms/37218276"
   },
   {
-    "image": "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/98ed9b10-f17a-4e4f-99e0-5a708efa8221.png?im_w=1200",
+    "image": "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/f5a99a13-13e8-45db-bc2a-3f8f41f5cb22.png?im_w=1200",
     "badge": "Pokhara Studio Apartment 1",
     "title": "Modern Studio Apartment in Pokhara",
     "subtitle": "Peaceful sanctuary tucked 100m inside the main street with private rooftop and hill views.",
@@ -18,7 +18,7 @@ const HERO_SLIDES = [
     "airbnb_url": "https://www.airbnb.com/rooms/775027304869499813"
   },
   {
-    "image": "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/90ce31d6-7efb-44e4-8f4e-35ff001f7658.png?im_w=1200",
+    "image": "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/a6b758f2-bac5-446f-adac-9971c3afba6a.png?im_w=1200",
     "badge": "Peace Zone 1BR & Garden",
     "title": "Garden Apartment Near Pokhara Lakeside",
     "subtitle": "Spacious 400 sq. ft. ground floor apartment nestled 100m off the main road with serene private garden.",
@@ -73,18 +73,15 @@ const APARTMENTS_DATA = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/34386898-9a1f-43e3-b31e-3b010b70059a.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/7e66a4a7-e3b1-48c3-b8f8-ff758e484f9b.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/099e04c0-3995-49d1-a984-9c5163ae959e.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/5fe24f06-94ff-45f2-8c19-2ee1f1e59bf8.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/7861b964-e27d-4ff8-9ec2-a97f2453b068.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/5fe24f06-94ff-45f2-8c19-2ee1f1e59bf8.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/26bf7a39-066c-470a-8a6f-15d2c30801fe.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/b4bfdc37-366a-4f22-9871-b3795fdb824d.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/7b4d48ea-bf14-4c87-8d87-b21cde85cb42.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/f377bfa1-2846-463e-8945-167bc76fbf5f.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/fbfd0fc1-49a3-4a89-a8a2-24dd76a7bc65.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/c97b4f2f-c64a-4654-9a47-264804572bc9.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/3e5a2bbc-32b4-4926-89e3-c04cb0443821.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/f45d5fe7-739c-4a9c-a0ca-052c9ab4e988.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/32d62687-57fa-479a-b0c6-f5609db28179.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/d1ac2935-5748-4e1c-a030-79a653cc0fcd.jpg?im_w=1200"
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-37218276/original/3e5a2bbc-32b4-4926-89e3-c04cb0443821.png?im_w=1200"
     ]
   },
   {
@@ -113,16 +110,15 @@ const APARTMENTS_DATA = [
       "Free Safe Luggage Storage"
     ],
     "images": [
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/98ed9b10-f17a-4e4f-99e0-5a708efa8221.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/9ea750cc-5328-48a0-a669-cb153f21e0b8.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/1aa50385-6cb4-4f03-ae11-fd21f9f3ea1c.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/eb2800ff-a754-4bda-9b7f-ef07cf97f34a.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/80554b14-ebf7-4f97-9778-e6323fb1fbd4.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/adbe1b71-34f7-4c9a-b9fe-ec903ea90bd1.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/f5a99a13-13e8-45db-bc2a-3f8f41f5cb22.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/98ed9b10-f17a-4e4f-99e0-5a708efa8221.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/452027e8-8ec6-4352-b1c0-18f1a8d6bfc2.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/9ea750cc-5328-48a0-a669-cb153f21e0b8.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/eb2800ff-a754-4bda-9b7f-ef07cf97f34a.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/56e678c3-a7a6-4d4e-8053-41ff6d1b4ca7.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/835ddaa1-3623-4b9b-915c-24db2948e5fd.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/452027e8-8ec6-4352-b1c0-18f1a8d6bfc2.png?im_w=1200"
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/1aa50385-6cb4-4f03-ae11-fd21f9f3ea1c.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/80554b14-ebf7-4f97-9778-e6323fb1fbd4.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-775027304869499813/original/adbe1b71-34f7-4c9a-b9fe-ec903ea90bd1.png?im_w=1200"
     ]
   },
   {
@@ -151,20 +147,19 @@ const APARTMENTS_DATA = [
       "Free Safe Luggage Storage"
     ],
     "images": [
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/4c3c23ec-8b96-4dfd-b971-ac834de7cb56.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/fd4d8fba-9fb3-4b20-a365-f9aae19fc0d7.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/4d7d4b52-3f65-4c5c-8cb0-5973083f5d43.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/bdc2c1bd-604f-45b6-abad-2c16a49e1f97.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/b9bf6dc7-21c5-4c99-80fe-df8e6355e3b4.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/95a98754-193f-421e-adb2-1172cacf346b.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/81c7663f-c614-464e-983d-d6d3768a5368.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/7f490d5b-ec4a-4c72-bc85-44abcf8775a6.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/d4260cc0-7bbd-43e3-88d7-9b985fcb0bf7.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/c579b7d4-21f8-439b-9a31-13adc2b2aa4a.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/296b1086-ac8a-422e-acf4-9a245ab8d4db.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/65566962-11fc-48bb-8b6f-14e4fbfe3541.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/bdc2c1bd-604f-45b6-abad-2c16a49e1f97.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/dc0f1d83-6433-4504-a618-2297a8241128.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/b9bf6dc7-21c5-4c99-80fe-df8e6355e3b4.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/d4260cc0-7bbd-43e3-88d7-9b985fcb0bf7.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/4d7d4b52-3f65-4c5c-8cb0-5973083f5d43.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/95a98754-193f-421e-adb2-1172cacf346b.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/296b1086-ac8a-422e-acf4-9a245ab8d4db.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/cfef7649-082d-4cc4-a387-998d4e1ebac6.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/4c3c23ec-8b96-4dfd-b971-ac834de7cb56.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/c579b7d4-21f8-439b-9a31-13adc2b2aa4a.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/81c7663f-c614-464e-983d-d6d3768a5368.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/1d2dec1a-38b3-40e8-a3c1-bb8fdee38a38.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-846248981374402035/original/b43ea4b7-d6cd-4170-9a16-31674f55b0d2.png?im_w=1200"
     ]
@@ -195,20 +190,19 @@ const APARTMENTS_DATA = [
       "Free Safe Luggage Storage"
     ],
     "images": [
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/90ce31d6-7efb-44e4-8f4e-35ff001f7658.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/ca72303b-bbb5-4893-854e-84abedb60bd9.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/353ddb87-1f97-4857-9d6c-1ef7386cfcb0.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/a6b758f2-bac5-446f-adac-9971c3afba6a.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/e89ac4ec-f75f-4e1b-8e48-422486b13de8.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/ca72303b-bbb5-4893-854e-84abedb60bd9.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/914c7a18-c1eb-42b7-8dfc-af136c99cd14.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/0eb70204-5826-4a6c-b2a8-4d94668d8096.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/373f9a22-1daf-4bf9-bb29-b67c6aa0a5c5.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/28269d45-d0b5-4a2f-9172-a8f839ae135d.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/765f0066-955a-4aae-a776-79a7908d4fff.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/0eb70204-5826-4a6c-b2a8-4d94668d8096.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/cd6fa119-85c2-4757-9c84-344f78cae01a.jpeg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7a601cc1-2c7b-4cc6-ae80-57c322dfa55c.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/914c7a18-c1eb-42b7-8dfc-af136c99cd14.jpeg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/934a892f-53fb-4489-a582-ecb943abdac0.jpeg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/e89ac4ec-f75f-4e1b-8e48-422486b13de8.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/90ce31d6-7efb-44e4-8f4e-35ff001f7658.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/353ddb87-1f97-4857-9d6c-1ef7386cfcb0.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/5e10f3a3-a047-48ad-80a3-be0dcd1c1450.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/765f0066-955a-4aae-a776-79a7908d4fff.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/cd6fa119-85c2-4757-9c84-344f78cae01a.jpeg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/934a892f-53fb-4489-a582-ecb943abdac0.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1039685991315991696/original/5d0c1eb1-57ee-40ef-b154-4bfed0a345ff.jpeg?im_w=1200"
     ]
   },
@@ -241,21 +235,13 @@ const APARTMENTS_DATA = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/4e070f17-39b5-4330-9aca-6fc065487ee4.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/58918757-e992-4e82-aee4-901c9f905913.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/9699cc99-4625-49df-84d6-c08a75561829.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/769810bf-b465-4f0e-bbee-162165199957.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/112fc153-5019-4049-ad9f-22248d120530.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/da70eeab-8e16-473f-9051-1877cabe0835.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/769810bf-b465-4f0e-bbee-162165199957.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/636d7431-b0c5-402c-b5b9-2c82fa72ccb3.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/f22ddc97-9ea1-43fe-8a76-b36e7e4ec7f6.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/63180729-11d0-4f9f-99d1-4b0987e6d8d7.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/c793fa12-3ba0-4495-9ccc-be33f06a8e9e.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/42c77aee-11f4-46ce-82d7-63e0a10bf615.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/9c11d7d0-b7c8-4cfc-ba8d-f9fa7c4a1483.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/1a699a83-a5d2-45eb-9f94-9126f2f6dc20.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/4a8d554f-d5cb-404d-846a-d68807609991.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/45987590-32a9-4433-81af-59c5a2227938.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7f5c7fc3-ef2e-4b5d-8dd2-2491a359898b.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/e16e21cf-1d90-4c4a-9647-8abb9770bbc6.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/15c615c9-fe97-42dc-bb37-a803e4bf7e9c.jpg?im_w=1200"
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-30459121/original/9c11d7d0-b7c8-4cfc-ba8d-f9fa7c4a1483.png?im_w=1200"
     ]
   },
   {
@@ -290,22 +276,10 @@ const APARTMENTS_DATA = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/a3a8f59d-99f0-4b18-aca1-be09301ef4b9.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/6dc738d3-97f2-4381-9571-44e244d1494c.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/f949f8fa-e4d0-49d1-96c3-30767b8d8852.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/64b16c42-cf30-49d3-a3d5-144e644b853e.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/6557d93f-2b80-44e3-962c-46ea6c66b67d.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/14904e22-c2dd-456b-a1cf-250e65d566c2.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/278649f9-23a7-40d8-b6ed-28ea67e760ea.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/88327577-fd5c-4280-8932-3da6790f1005.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/a34e0444-5c69-4fa9-8f97-880e6092ba7a.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/40a4b8e7-3be6-4f2b-87fd-4e3b7ecc4cad.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/b3d268d2-852c-4bdc-8fb0-88c252b11747.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/4d4e4343-e999-4469-9cbc-18c00f1561ce.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7b570d34-1192-4165-95cd-aae7ec7754d1.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/91ab84f3-c64d-4dc8-a39b-42e5e0b45c21.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/dc7019b7-37ad-4976-b5b0-08389cc41e96.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7072d12c-e04f-43ea-8fee-e1be980f13cb.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/9cf490b2-c739-482b-ab84-cd0a5e8441b7.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7aac3e54-fcb3-4a71-9cfd-e8fb498e2d43.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/dc7d482f-1a77-4c46-b1a2-5d97d8dd026c.jpg?im_w=1200"
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/64b16c42-cf30-49d3-a3d5-144e644b853e.png?im_w=1200",
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-23583417/original/278649f9-23a7-40d8-b6ed-28ea67e760ea.png?im_w=1200"
     ]
   },
   {
@@ -342,22 +316,7 @@ const APARTMENTS_DATA = [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-27272742/original/5e20f361-59e7-48a0-96d9-c580187186a0.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-27272742/original/c39b7d0d-e646-418b-885d-928602f3b89f.png?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-27272742/original/84111e4e-8a9f-42a2-9c72-e27e2fdc2dbe.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-27272742/original/1cbacac4-19a9-40a7-b8a6-c0ace0b06109.png?im_w=1200",
-      "https://a0.muscache.com/im/pictures/ac7a2ca1-cc03-4dac-a3dc-235829e1d7d4.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/6f0348ff-2d0b-406e-8629-78be4bcbe990.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/9f36b326-7848-4d65-a3f2-d750359c3360.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/0ab404f2-ef70-456a-8439-74f2cb71e31b.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/07bdec13-7a56-4eff-9987-df7ab2b84801.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/0f0f3d5e-a7b1-479d-b054-651ed34af1f7.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/cebf5cec-f378-488c-a81f-188e195f774d.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/05195d90-afe8-4645-b93d-9aa6cd9cd00a.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/c1ee4309-558a-4606-9055-0296314d4eb5.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/76afd50f-33a4-4c9a-88fb-21240b72230e.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7df8a901-5d4d-4309-9303-7af50e393aaf.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/6de0b773-1bae-4c46-b1af-bbb1e6377b56.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/971caa6f-71ba-4b4e-b763-e751856eb8dd.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/011b3d6e-0360-4ce3-9c8e-369fdccda0a3.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/ce7718f5-10f0-49ea-ac7a-1093b16aaedc.jpg?im_w=1200"
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-27272742/original/1cbacac4-19a9-40a7-b8a6-c0ace0b06109.png?im_w=1200"
     ]
   },
   {
@@ -393,22 +352,7 @@ const APARTMENTS_DATA = [
       "https://a0.muscache.com/im/pictures/a5de9612-2df4-46d1-ad83-f63f693bd366.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/5c52109d-ff27-4a4e-98c4-4d61681fd82f.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/c2fa49fb-714f-4be8-ad16-026f85fef472.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/0f5cb435-a96d-4bd1-8f6d-78ad84ee7bfe.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/770f6efc-6de8-44cc-b356-0105cdef6418.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/12424b4d-57f1-4aac-a50b-455be6ddeb8f.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/46a5dce3-4302-4aaa-a09a-3430df66835b.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/daa835b3-d414-4580-861c-1962346f1a88.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/54e2e472-6e2d-463e-9610-a00fda667ad0.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/d70b721b-413c-46af-9e1b-5b16e9aca292.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/7f2f3f11-2781-48a8-942f-f7ca25ebbbb5.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/cfcb0a75-1f1a-4825-b41e-43ff5621fe94.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/76039ac6-f0aa-4071-84ca-4cd400e5e046.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/46f3fde5-d668-4e30-adae-79e00851938c.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/823bdac8-4cdb-4a8e-9571-0204ad574e10.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/12748848-6486-4320-9789-7806c45dc261.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/b3c41f13-68fe-4430-b1a9-9a691e60613c.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/df5a7846-1921-4c9a-bdac-5524eeb6ccca.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/985b4c2f-4bf8-4d1d-8586-7dacc56d9a36.jpg?im_w=1200"
+      "https://a0.muscache.com/im/pictures/0f5cb435-a96d-4bd1-8f6d-78ad84ee7bfe.jpg?im_w=1200"
     ]
   },
   {
@@ -437,20 +381,14 @@ const APARTMENTS_DATA = [
       "Free Safe Luggage Storage"
     ],
     "images": [
-      "https://a0.muscache.com/im/pictures/f3d2af07-a265-4bd9-aaf3-72d4ef15c1e6.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/26da251d-b790-4d2b-b4f4-56363a7d2086.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/bb3c66e2-40fc-43d4-9325-4d8a9c5f53a8.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/3eeb9bec-f46b-4ef5-9efb-febdca528962.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/b880a2f1-faf2-4b78-a257-c2c45cab9098.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/2e539fc4-a6b4-4b93-a640-4582181c2852.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/4995a062-99df-4ffa-9398-c0f8c94ec7dd.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/f948ffe3-5776-4875-959b-6c26e4f964ad.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/3742a595-5b60-4fe3-9221-f90c94264acd.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/315e6084-e076-42c4-a302-c2023ebea26a.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/b880a2f1-faf2-4b78-a257-c2c45cab9098.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/26da251d-b790-4d2b-b4f4-56363a7d2086.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/f3d2af07-a265-4bd9-aaf3-72d4ef15c1e6.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/cbd0f0df-0692-4b89-b469-2de7faada800.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/2bace1ac-54c8-47e4-88fa-6450ebb4f8e9.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/3742a595-5b60-4fe3-9221-f90c94264acd.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/1c3076d4-bad2-4305-8c5b-13443714db35.jpg?im_w=1200",
-      "https://a0.muscache.com/im/pictures/e29fcf0e-ff42-40fb-b1dd-07202325fb46.jpg?im_w=1200",
+      "https://a0.muscache.com/im/pictures/315e6084-e076-42c4-a302-c2023ebea26a.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-746134227500376760/original/2ccd8aea-b76c-44af-8bfa-0cc222637b03.jpeg?im_w=1200"
     ]
   }
